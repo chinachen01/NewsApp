@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+    android:background="@android:color/black">
+    <com.android.volley.toolbox.NetworkImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:id="@+id/pic_news_detail_image"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/pic_news_detail_title_text"
+                android:textSize="18sp"
+                android:layout_marginLeft="5dp"
+                android:textColor="@android:color/white"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/pic_news_detail_count_text"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="5dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:id="@+id/pic_news_detai_content_text"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:layout_below="@id/pic_news_detail_title_text"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"/>
+        </RelativeLayout>
+    </ScrollView>
+
+</LinearLayout>

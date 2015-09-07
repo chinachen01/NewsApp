@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CustomTitle">
+        <attr name="TitleBacground" format="color"/>
+        <attr name="LeftImageSrc" format="reference"/>
+        <attr name="RightImageSrc" format="reference"/>
+        <attr name="TitleText" format="string"/>
+        <attr name="TitleColor" format="color"/>
+        <attr name="TitleSize" format="dimension"/>
+        <attr name="TitleDivder" format="boolean"/>
+    </declare-styleable>
+
+</resources>

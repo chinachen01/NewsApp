@@ -1,0 +1,11 @@
+[core]
+	bare = true
+	repositoryformatversion = 0
+	filemode = false
+	symlinks = false
+	ignorecase = true
+[remote "origin"]
+	url = https://github.com/chinachen01/NewsApp.git
+	fetch = +refs/heads/*:refs/remotes/origin/*
+	puttykeyfile = C:\\Users\\focus\\Documents\\privatekey.ppk
+	pushurl = https://github.com/chinachen01/NewsApp.git

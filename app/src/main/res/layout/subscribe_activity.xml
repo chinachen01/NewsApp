@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:custom="http://schemas.android.com/apk/res-auto"
+                android:background="@color/subscribe_activity_bg"
+                android:id="@+id/root_view"
+                android:layout_height="fill_parent"
+                android:layout_width="fill_parent">
+
+    <com.newsapp.widgets.CustomTitle
+        custom:LeftImageSrc="@drawable/selector__title_back_btn"
+        custom:TitleBacground="@android:color/holo_red_light"
+        custom:TitleColor="@android:color/white"
+        custom:TitleDivder="false"
+        custom:TitleText="频道管理"
+        android:id="@+id/channel_add_title"
+        android:layout_height="45dp"
+        android:layout_width="match_parent"/>
+
+    <ScrollView
+        android:layout_below="@id/channel_add_title"
+        android:layout_height="fill_parent"
+        android:layout_width="fill_parent">
+
+        <LinearLayout
+            android:background="@color/subscribe_bg"
+            android:id="@+id/subscribe_main_layout"
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:orientation="vertical"
+            android:paddingBottom="14.0dip">
+
+            <LinearLayout
+                android:gravity="bottom"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:layout_marginTop="14.0dip"
+                android:layout_width="fill_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/subscribe_my_tip_text"
+                    android:id="@+id/my_category_text"
+                    android:text="@string/subscribe_my_category"/>
+
+                <TextView
+                    android:id="@+id/my_category_tip_text"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12.0dip"
+                    android:layout_width="wrap_content"
+                    android:text="@string/subscribe_manager_category_info_2"
+                    android:textColor="@color/subscribe_tip_text"
+                    android:textSize="11.0sp"/>
+            </LinearLayout>
+
+            <View
+                style="@style/subscribe_seperate_line"
+                android:id="@+id/seperate_line"/>
+
+            <com.newsapp.ui.channel.view.DragGrid
+                android:gravity="center"
+                android:horizontalSpacing="10dp"
+                android:id="@+id/userGridView"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_width="match_parent"
+                android:numColumns="4"
+                android:verticalSpacing="10dp"
+                />
+
+            <View
+                style="@style/subscribe_seperate_line"
+                android:id="@+id/seperate_line2"/>
+
+            <TextView
+                style="@style/subscribe_more_tip_text"
+                android:id="@+id/more_category_text"
+                android:layout_marginBottom="14.0dip"
+                android:layout_marginLeft="10.0dip"
+                android:text="@string/subscribe_more_category"/>
+
+            <com.newsapp.ui.channel.view.OtherGridView
+                android:gravity="center"
+                android:horizontalSpacing="14dip"
+                android:id="@+id/otherGridView"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="14dip"
+                android:layout_marginRight="14dip"
+                android:layout_width="fill_parent"
+                android:listSelector="@android:color/transparent"
+                android:numColumns="4"
+                android:scrollbars="vertical"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="14.0px"/>
+        </LinearLayout>
+    </ScrollView>
+
+    <include
+        layout="@layout/subscribe_category_item"
+        android:id="@+id/category_layout"
+        android:visibility="gone"/>
+
+</RelativeLayout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+    android:background="@mipmap/sliding_pc_main_bg">
+
+    <TextView
+        style="@style/SlidingItem"
+        android:id="@+id/slidingmenu_pic_text"
+        android:drawableLeft="@mipmap/sliding_navigation_tab_pics"
+        android:text="@string/picture_text"/>
+
+    <TextView
+        style="@style/SlidingItem"
+        android:drawableLeft="@mipmap/sliding_navigation_tab_video"
+        android:id="@+id/slidingmenu_vedio_text"
+        android:text="@string/vedio_text"/>
+
+    <TextView
+        style="@style/SlidingItem"
+        android:drawableLeft="@mipmap/sliding_navigation_tab_weather"
+        android:id="@+id/slidingmenu_weather_text"
+        android:text="@string/weather_text"/>
+
+    <TextView
+        style="@style/SlidingItem"
+        android:drawableLeft="@mipmap/sliding_navigation_tab_map_1"
+        android:id="@+id/slidingmenu_map_text"
+        android:text="@string/map_text"/>
+
+    <TextView
+        style="@style/SlidingItem"
+        android:drawableLeft="@mipmap/sliding_navigation_tab_more"
+        android:id="@+id/slidingmenu_more_text"
+        android:text="@string/more_text"/>
+</LinearLayout>

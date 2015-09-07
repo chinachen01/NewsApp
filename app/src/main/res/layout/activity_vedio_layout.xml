@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:custom="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <com.newsapp.widgets.CustomTitle
+        android:id="@+id/vedio_titile"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        custom:LeftImageSrc="@drawable/selector__title_back_btn"
+        custom:TitleBacground="@android:color/holo_red_light"
+        custom:TitleColor="@android:color/white"
+        custom:TitleDivder="false"
+        custom:TitleText="@string/vedio_title_text">
+    </com.newsapp.widgets.CustomTitle>
+
+
+    <RadioGroup
+        android:id="@+id/vedio_title_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+    <RadioButton
+        style="@style/TitleRadioButton"
+        android:text="热点"/>
+
+    <RadioButton
+        style="@style/TitleRadioButton"
+        android:text="娱乐"/>
+
+    <RadioButton
+        style="@style/TitleRadioButton"
+        android:text="搞笑"/>
+
+    <RadioButton
+        style="@style/TitleRadioButton"
+        android:text="精品"/>
+    </RadioGroup>
+    <android.support.v4.view.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/vedio_view_pager"
+        />
+</LinearLayout>

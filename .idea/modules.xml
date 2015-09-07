@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/NewsApp.iml" filepath="$PROJECT_DIR$/NewsApp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/VitamioBundle-3.0/VitamioBundle-3.0.iml" filepath="$PROJECT_DIR$/VitamioBundle-3.0/VitamioBundle-3.0.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Volley_libaray/Volley_libaray.iml" filepath="$PROJECT_DIR$/Volley_libaray/Volley_libaray.iml" />
+      <module fileurl="file://$PROJECT_DIR$/XListView-Android-master/XListView-Android-master.iml" filepath="$PROJECT_DIR$/XListView-Android-master/XListView-Android-master.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/slidingmenu_library/slidingmenu_library.iml" filepath="$PROJECT_DIR$/slidingmenu_library/slidingmenu_library.iml" />
+    </modules>
+  </component>
+</project>

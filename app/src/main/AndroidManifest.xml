@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    package="com.focus.newsapp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <!-- 在SDCard中创建与删除文件权限 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <!-- 往SDCard写入数据权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!--保持屏幕唤醒,不锁屏-->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/news_icon_blue"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme"
+        android:name="com.newsapp.app.AppApplication"
+        >
+        <activity
+            android:name="com.newsapp.ui.index.activity.IndexActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.newsapp.ui.index.activity.IndexDetailContenActivity"
+            android:label="NewsApp"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.newsapp.ui.picNews.activity.PicNewsActivity"
+            android:label="NewsApp"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.newsapp.ui.picNews.activity.PicNewsDetailActivity"
+            android:label="NewsApp"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.newsapp.ui.channel.activity.ChannelActivity"
+            android:label="NewsApp"/>   <activity
+            android:name="com.newsapp.ui.vedio.activity.VedioActivity"
+            android:label="NewsApp"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.newsapp.ui.vedio.activity.VedioDetailActivity"
+            android:label="NewsApp"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+        <activity
+            android:name="io.vov.vitamio.activity.InitActivity"
+            android:configChanges="orientation|screenSize|smallestScreenSize|keyboard|keyboardHidden|navigation"
+            android:launchMode="singleTop"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+    </application>
+
+</manifest>

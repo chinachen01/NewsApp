@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">NewsApp</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="index_title_text">新闻快讯</string>
+    <string name="index_title_head">头条</string>
+    <string name="index_title_recreation">娱乐</string>
+    <string name="index_title_sport">体育</string>
+    <string name="index_title_economics">财经</string>
+    <string name="detail_title_text">新闻详情</string>
+    <string name="picture_text">图片</string>
+    <string name="vedio_text">视频</string>
+    <string name="weather_text">天气</string>
+    <string name="map_text">地图</string>
+    <string name="more_text">更多</string>
+    <string name="pic_news">图片新闻</string>
+    <string name="drawer_btn_rss">频道管理</string>
+    <string name="subscribe_my_category">我的频道</string>
+    <string name="subscribe_more_category">更多频道</string>
+    <string name="subscribe_manager_category_info">单击增删频道</string>
+    <string name="subscribe_manager_category_info_2">单击增删频道，长按拖拽排序</string>
+    <string name="vedio_title_text">视频新闻</string>
+</resources>
